@@ -1,10 +1,17 @@
 # star-citizen-dual-logi-extreme
 Star Citizen Dual Logitech Extreme 3D Pro Configuration
 
-Download the latest release as a zip file here.
+Follow the instructions from my [joystick gremlin dual logi.pdf](
+https://github.com/Chadarius/star-citizen-dual-logi-extreme/blob/main/joystick%20gremlin%20dual%20logi.pdf).
 
-Copy layout_dual-logi-extreme_exported.xml to 
-C:\Program Files\Roberts Space Industries\StarCitizen\LIVE\USER\Client\0\Controls\Mappings
+##Quick Reference
+Seriously read the PDF above before just trying this because it won't work :)
 
-In game, open the console and cut and past the following command:
-pp_rebindkeys layout_dual-logi-extreme_exported
+Download the ["joystick gremlin dual logi.xml"](https://raw.githubusercontent.com/Chadarius/star-citizen-dual-logi-extreme/main/joystick%20gremlin%20dual%20logi.xml) and load the profile in Joystick Gremlin. 
+
+Download and copy [vjoy-dual-logi.xml](https://raw.githubusercontent.com/Chadarius/star-citizen-dual-logi-extreme/main/vjoy-dual-logi.xml) to 
+"C:\Program Files\Roberts Space Industries\StarCitizen\LIVE\USER\Client\0\Controls\Mappings" or wherever your install happens to be. 
+
+In Star Citizen, open the console and cut and paste the following command:
+
+pp_rebindkeys vjoy-dual-logi
