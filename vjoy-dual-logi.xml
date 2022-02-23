@@ -4,13 +4,13 @@
    <keyboard instance="1"/>
    <mouse instance="1"/>
    <joystick instance="1"/>
-   <joystick instance="2"/>
   </devices>
   <categories>
    <category label="@ui_CCSeatGeneral"/>
    <category label="@ui_CCSpaceFlight"/>
    <category label="@ui_CGLightControllerDesc"/>
    <category label="@ui_CCFPS"/>
+   <category label="@ui_CCEVA"/>
    <category label="@ui_CCVehicle"/>
    <category label="@ui_CGUIGeneral"/>
    <category label="@ui_CGInteraction"/>
@@ -29,8 +29,8 @@
   <fps_move_longitudinal invert="1"/>
   <flight_move_strafe_forward invert="1"/>
   <flight_move_speed_range_abs invert="1"/>
+  <mgv_move invert="0"/>
  </options>
- <options type="joystick" instance="2" Product="Extreme 3D pro {C215046D-0000-0000-0000-504944564944}"/>
  <modifiers />
  <actionmap name="seat_general">
   <action name="v_toggle_mining_mode">
@@ -202,9 +202,6 @@
   <action name="attack1">
    <rebind input="js1_button1"/>
   </action>
-  <action name="gp_crouch">
-   <rebind input="js2_hat1_down"/>
-  </action>
   <action name="gp_movex">
    <rebind input="js1_rotx"/>
   </action>
@@ -216,9 +213,6 @@
   </action>
   <action name="gp_rotateyaw">
    <rebind input="js1_z"/>
-  </action>
-  <action name="jump">
-   <rebind input="js2_hat1_up"/>
   </action>
   <action name="leanleft">
    <rebind input="js1_hat2_left"/>
@@ -251,7 +245,36 @@
    <rebind input="js1_button5"/>
   </action>
  </actionmap>
+ <actionmap name="zero_gravity_eva">
+  <action name="eva_boost">
+   <rebind input="js1_button25"/>
+  </action>
+  <action name="eva_brake">
+   <rebind input="js1_button23"/>
+  </action>
+  <action name="eva_roll">
+   <rebind input="js1_x"/>
+  </action>
+  <action name="eva_strafe_lateral">
+   <rebind input="js1_rotx"/>
+  </action>
+  <action name="eva_strafe_longitudinal">
+   <rebind input="js1_rotz"/>
+  </action>
+  <action name="eva_strafe_vertical">
+   <rebind input="js1_roty"/>
+  </action>
+  <action name="eva_view_pitch">
+   <rebind input="js1_y"/>
+  </action>
+  <action name="eva_view_yaw">
+   <rebind input="js1_z"/>
+  </action>
+ </actionmap>
  <actionmap name="vehicle_general">
+  <action name="v_view_cycle_fwd">
+   <rebind input="js1_button26"/>
+  </action>
   <action name="v_view_pitch">
    <rebind input="js1_ "/>
   </action>
@@ -260,8 +283,20 @@
   </action>
  </actionmap>
  <actionmap name="vehicle_driver">
-  <action name="v_yaw">
+  <action name="v_boost">
+   <rebind input="js1_button25"/>
+  </action>
+  <action name="v_brake">
+   <rebind input="js1_button23"/>
+  </action>
+  <action name="v_move">
    <rebind input="js1_rotz"/>
+  </action>
+  <action name="v_move_forward">
+   <rebind input="js1_slider2"/>
+  </action>
+  <action name="v_yaw">
+   <rebind input="js1_z"/>
   </action>
  </actionmap>
  <actionmap name="default">
